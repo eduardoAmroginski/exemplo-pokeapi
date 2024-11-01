@@ -13,3 +13,16 @@ export async function listAllPokemons(urlApi = urlPokeApi){
         console.error(error.message);
     }
 }
+
+export async function detailsPokemon(urlApi){
+    try{
+        const data = await fetch(urlApi);
+        const response = await data.json();
+        
+        return response;
+
+    }catch(error){
+        showError("Ops! Um erro inexperado ocorreu ao carregar a lista de pokémons!");
+        console.error(error.message);
+    }
+}

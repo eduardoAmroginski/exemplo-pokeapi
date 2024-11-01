@@ -12,7 +12,7 @@ export function createCard(pokemon, index) {
                         <h5 class="card-title">${pokemon.name}</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                             card's content.</p>
-                        <a href="${pokemon.url}" class="btn btn-primary">Ver mais</a>
+                        <a href="src/pages/details.html?detailsUrl=${pokemon.url}" class="btn btn-primary">Ver mais</a>
                     </div>
                 </div>`
 
